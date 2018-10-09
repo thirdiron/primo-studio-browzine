@@ -19,9 +19,9 @@ function primoStudioBrowzineController(angularLoad, studioConfig, $http, $scope,
 };
 
 var primoStudioBrowzineComponent = {
-    selector: 'primoStudioBrowzine',
-    controller: primoStudioBrowzineController,
-    bindings: {parentCtrl: '<'}
+  selector: 'primoStudioBrowzine',
+  controller: primoStudioBrowzineController,
+  bindings: {parentCtrl: '<'}
 };
 
 var primoStudioBrowzineModule = angular
