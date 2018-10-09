@@ -1,4 +1,4 @@
-primoStudioBrowzineController.$inject = [
+PrimoStudioBrowzineController.$inject = [
   'angularLoad',
   'primoStudioBrowzineStudioConfig',
   '$http',
@@ -8,7 +8,7 @@ primoStudioBrowzineController.$inject = [
   '$window'
 ];
 
-function primoStudioBrowzineController(angularLoad, studioConfig, $http, $scope, $element, $timeout, $window) {
+function PrimoStudioBrowzineController(angularLoad, studioConfig, $http, $scope, $element, $timeout, $window) {
   $onInit = function() {
 
   };
@@ -18,14 +18,14 @@ function primoStudioBrowzineController(angularLoad, studioConfig, $http, $scope,
   };
 };
 
-var primoStudioBrowzineComponent = {
+var PrimoStudioBrowzineComponent = {
   selector: 'primoStudioBrowzine',
-  controller: primoStudioBrowzineController,
+  controller: PrimoStudioBrowzineController,
   bindings: {parentCtrl: '<'}
 };
 
-var primoStudioBrowzineModule = angular
+var PrimoStudioBrowzineModule = angular
     .module('primoStudioBrowzine', [])
-    .component(primoStudioBrowzineComponent.selector, primoStudioBrowzineComponent);
+    .component(PrimoStudioBrowzineComponent.selector, PrimoStudioBrowzineComponent);
 
-app.requires.push(primoStudioBrowzineModule);
+app.requires.push(PrimoStudioBrowzineModule);
