@@ -40,7 +40,7 @@ function PrimoStudioBrowzineController($scope, studioConfig) {
     }
   };
 
-  $window.browzine.primo.searchResult($scope);
+  window.browzine.primo.searchResult($scope);
 };
 
 var PrimoStudioBrowzineComponent = {
