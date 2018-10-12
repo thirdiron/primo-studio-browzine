@@ -49,8 +49,10 @@ var PrimoStudioBrowzineComponent = {
   bindings: {parentCtrl: '<'}
 };
 
+console.log("BrowZine Update: 1");
+
 var PrimoStudioBrowzineModule = angular
     .module('primoStudioBrowzine', [])
-    .component(PrimoStudioBrowzineComponent.selector, PrimoStudioBrowzineComponent);
+    .component(PrimoStudioBrowzineComponent.selector, PrimoStudioBrowzineComponent).name;
 
 app.requires.push(PrimoStudioBrowzineModule);
