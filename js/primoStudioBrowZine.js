@@ -49,7 +49,7 @@ var PrimoStudioBrowzineComponent = {
   bindings: {parentCtrl: '<'}
 };
 
-console.log("BrowZine Update: 1");
+console.log("BrowZine Publish: 1.0.1");
 
 var PrimoStudioBrowzineModule = angular
     .module('primoStudioBrowzine', [])
