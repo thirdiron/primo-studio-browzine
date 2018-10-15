@@ -11,10 +11,10 @@
     "config": {
       "form": [
         {
-          "key": "api",
+          "key": "libraryId",
           "type": "input",
           "templateOptions": {
-            "label": "BrowZine API Endpoint"
+            "label": "BrowZine Library Id"
           }
         },
         {
