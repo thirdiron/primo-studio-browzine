@@ -13,6 +13,8 @@
         {
           "key": "libraryId",
           "type": "input",
+          "required": true,
+          "defaultValue": "ENTER LIBRARY ID",
           "templateOptions": {
             "label": "BrowZine Library Id"
           }
@@ -20,6 +22,8 @@
         {
           "key": "apiKey",
           "type": "input",
+          "required": true,
+          "defaultValue": "ENTER API KEY",
           "templateOptions": {
             "label": "BrowZine API Key"
           }
@@ -27,6 +31,7 @@
         {
           "key": "journalCoverImagesEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable Journal Cover Images",
             "options": [
@@ -44,6 +49,7 @@
         {
           "key": "journalBrowZineWebLinkTextEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable BrowZine Web Journal Issue Links",
             "options": [
@@ -61,6 +67,7 @@
         {
           "key": "journalBrowZineWebLinkText",
           "type": "input",
+          "defaultValue": true,
           "templateOptions": {
             "label": "BrowZine Web Journal Issue Link Text"
           }
@@ -68,6 +75,7 @@
         {
           "key": "articleBrowZineWebLinkTextEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable BrowZine Web Article In Context Links",
             "options": [
@@ -85,6 +93,7 @@
         {
           "key": "articleBrowZineWebLinkText",
           "type": "input",
+          "defaultValue": true,
           "templateOptions": {
             "label": "BrowZine Web Article In Context Link Text"
           }
@@ -92,6 +101,7 @@
         {
           "key": "articlePDFDownloadLinkEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable BrowZine Web PDF Download Links",
             "options": [
@@ -109,6 +119,7 @@
         {
           "key": "articlePDFDownloadLinkText",
           "type": "input",
+          "defaultValue": true,
           "templateOptions": {
             "label": "BrowZine Web PDF Download Link Text"
           }
@@ -116,6 +127,7 @@
         {
           "key": "printRecordsIntegrationEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable Print Records Integration",
             "options": [
