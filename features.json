@@ -13,7 +13,6 @@
         {
           "key": "libraryId",
           "type": "input",
-          "required": true,
           "templateOptions": {
             "required": true,
             "label": "BrowZine Library Id",
@@ -23,7 +22,6 @@
         {
           "key": "apiKey",
           "type": "input",
-          "required": true,
           "templateOptions": {
             "required": true,
             "label": "BrowZine API Key",
@@ -140,6 +138,32 @@
               {
                 "name": "false",
                 "value": false
+              }
+            ]
+          }
+        },
+        {
+          "$error": {
+            "required": [
+              {
+                "$validators": {},
+                "$asyncValidators": {},
+                "$parsers": [],
+                "$formatters": [
+                  null
+                ],
+                "$viewChangeListeners": [],
+                "$untouched": true,
+                "$touched": false,
+                "$pristine": true,
+                "$dirty": false,
+                "$valid": false,
+                "$invalid": true,
+                "$error": {
+                  "required": true
+                },
+                "$name": "vm.form_input_firstName_0",
+                "$options": null
               }
             ]
           }
