@@ -15,7 +15,6 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "minlength": 1,
             "label": "BrowZine Library Id",
             "placeholder": "ENTER LIBRARY ID"
           }
@@ -24,8 +23,6 @@
           "key": "apiKey",
           "type": "input",
           "templateOptions": {
-            "required": true,
-            "minlength": 1,
             "label": "BrowZine API Key",
             "placeholder": "ENTER API KEY"
           }
