@@ -23,6 +23,7 @@
           "key": "apiKey",
           "type": "input",
           "templateOptions": {
+            "required": true,
             "label": "BrowZine API Key",
             "placeholder": "ENTER API KEY"
           }
