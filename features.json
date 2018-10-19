@@ -14,18 +14,18 @@
           "key": "libraryId",
           "type": "input",
           "required": true,
-          "defaultValue": "ENTER LIBRARY ID",
           "templateOptions": {
-            "label": "BrowZine Library Id"
+            "label": "BrowZine Library Id",
+            "placeholder": "ENTER LIBRARY ID"
           }
         },
         {
           "key": "apiKey",
           "type": "input",
           "required": true,
-          "defaultValue": "ENTER API KEY",
           "templateOptions": {
-            "label": "BrowZine API Key"
+            "label": "BrowZine API Key",
+            "placeholder": "ENTER API KEY"
           }
         },
         {
