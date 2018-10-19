@@ -162,7 +162,7 @@
                 "$error": {
                   "required": true
                 },
-                "$name": "vm.form_input_firstName_0",
+                "$name": "vm.formly_2_input_libraryId_0",
                 "$options": null
               }
             ]
