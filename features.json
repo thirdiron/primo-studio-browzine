@@ -18,9 +18,6 @@
             "minlength": 1,
             "label": "BrowZine Library Id",
             "placeholder": "ENTER LIBRARY ID"
-          },
-          "validation": {
-            "messages": {}
           }
         },
         {
@@ -31,9 +28,6 @@
             "minlength": 1,
             "label": "BrowZine API Key",
             "placeholder": "ENTER API KEY"
-          },
-          "validation": {
-            "messages": {}
           }
         },
         {
