@@ -1,6 +1,6 @@
 PrimoStudioBrowzineController.$inject = [
-  '$scope',
-  'primoStudioBrowzineStudioConfig'
+  "$scope",
+  "primoStudioBrowzineStudioConfig"
 ];
 
 function isBrowzineLoaded() {
@@ -44,15 +44,13 @@ function PrimoStudioBrowzineController($scope, studioConfig) {
 };
 
 var PrimoStudioBrowzineComponent = {
-  selector: 'primoStudioBrowzine',
+  selector: "primoStudioBrowzine",
   controller: PrimoStudioBrowzineController,
-  bindings: {parentCtrl: '<'}
+  bindings: {parentCtrl: "<"}
 };
 
-console.log("BrowZine Publish: 1.0.1");
-
 var PrimoStudioBrowzineModule = angular
-    .module('primoStudioBrowzine', [])
+    .module("primoStudioBrowzine", [])
     .component(PrimoStudioBrowzineComponent.selector, PrimoStudioBrowzineComponent).name;
 
 app.requires.push(PrimoStudioBrowzineModule);
