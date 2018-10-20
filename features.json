@@ -162,7 +162,7 @@
                 "$error": {
                   "required": true
                 },
-                "$name": "formly_1_customInput_picky_0",
+                "$name": "formly_1_input_libraryId_0",
                 "$options": null
               },
               {
@@ -182,7 +182,7 @@
                 "$error": {
                   "required": true
                 },
-                "$name": "formly_1_customInput_picky_0",
+                "$name": "formly_1_input_apiKey_1",
                 "$options": null
               }
             ]
