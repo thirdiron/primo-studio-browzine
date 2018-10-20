@@ -6,7 +6,7 @@
     "what": "BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
