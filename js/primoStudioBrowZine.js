@@ -21,7 +21,7 @@ function isBrowzineLoaded() {
 function PrimoStudioBrowzineController($scope, studioConfig) {
   $onInit = function() {
     window.browzine = {
-      api: studioConfig[0].api,
+      libraryId: studioConfig[0].libraryId,
       apiKey: studioConfig[0].apiKey,
       journalCoverImagesEnabled: studioConfig[0].journalCoverImagesEnabled,
       journalBrowZineWebLinkTextEnabled: studioConfig[0].journalBrowZineWebLinkTextEnabled,
