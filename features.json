@@ -186,6 +186,52 @@
                 "$options": null
               }
             ]
+          },
+          "$name": "vm.form",
+          "$dirty": false,
+          "$pristine": true,
+          "$valid": false,
+          "$invalid": true,
+          "$submitted": false,
+          "vm.formly_1_input_libraryId_0": {
+            "$validators": {},
+            "$asyncValidators": {},
+            "$parsers": [],
+            "$formatters": [
+              null
+            ],
+            "$viewChangeListeners": [],
+            "$untouched": true,
+            "$touched": false,
+            "$pristine": true,
+            "$dirty": false,
+            "$valid": false,
+            "$invalid": true,
+            "$error": {
+              "required": true
+            },
+            "$name": "vm.formly_1_input_libraryId_0",
+            "$options": null
+          },
+          "vm.formly_1_input_apiKey_1": {
+            "$validators": {},
+            "$asyncValidators": {},
+            "$parsers": [],
+            "$formatters": [
+              null
+            ],
+            "$viewChangeListeners": [],
+            "$untouched": true,
+            "$touched": false,
+            "$pristine": true,
+            "$dirty": false,
+            "$valid": false,
+            "$invalid": true,
+            "$error": {
+              "required": true
+            },
+            "$name": "vm.formly_1_input_apiKey_1",
+            "$options": null
           }
         }
       ]
