@@ -142,96 +142,51 @@
             ]
           }
         },
-
-        "$error": {
-          "required": [
-            {
-              "$validators": {},
-              "$asyncValidators": {},
-              "$parsers": [],
-              "$formatters": [
-                null
-              ],
-              "$viewChangeListeners": [],
-              "$untouched": true,
-              "$touched": false,
-              "$pristine": true,
-              "$dirty": false,
-              "$valid": false,
-              "$invalid": true,
-              "$error": {
-                "required": true
-              },
-              "$name": "vm.form_input_firstName_0",
-              "$options": null
-            },
-            {
-              "$validators": {},
-              "$asyncValidators": {},
-              "$parsers": [],
-              "$formatters": [
-                null
-              ],
-              "$viewChangeListeners": [],
-              "$untouched": true,
-              "$touched": false,
-              "$pristine": true,
-              "$dirty": false,
-              "$valid": false,
-              "$invalid": true,
-              "$error": {
-                "required": true
-              },
-              "$name": "vm.form_input_lastName_1",
-              "$options": null
-            }
-          ]
-        },
-        "$name": "vm.form",
-        "$dirty": false,
-        "$pristine": true,
-        "$valid": false,
-        "$invalid": true,
-        "$submitted": false,
-        "vm.form_input_firstName_0": {
-          "$validators": {},
-          "$asyncValidators": {},
-          "$parsers": [],
-          "$formatters": [
-            null
-          ],
-          "$viewChangeListeners": [],
-          "$untouched": true,
-          "$touched": false,
-          "$pristine": true,
-          "$dirty": false,
-          "$valid": false,
-          "$invalid": true,
+        {
           "$error": {
-            "required": true
-          },
-          "$name": "vm.form_input_firstName_0",
-          "$options": null
-        },
-        "vm.form_input_lastName_1": {
-          "$validators": {},
-          "$asyncValidators": {},
-          "$parsers": [],
-          "$formatters": [
-            null
-          ],
-          "$viewChangeListeners": [],
-          "$untouched": true,
-          "$touched": false,
-          "$pristine": true,
-          "$dirty": false,
-          "$valid": false,
-          "$invalid": true,
-          "$error": {
-            "required": true
-          },
-          "$name": "vm.form_input_lastName_1",
-          "$options": null
+            "required": [
+              {
+                "$validators": {},
+                "$asyncValidators": {},
+                "$parsers": [],
+                "$formatters": [
+                  null
+                ],
+                "$viewChangeListeners": [],
+                "$untouched": true,
+                "$touched": false,
+                "$pristine": true,
+                "$dirty": false,
+                "$valid": false,
+                "$invalid": true,
+                "$error": {
+                  "required": true
+                },
+                "$name": "formly_1_customInput_picky_0",
+                "$options": null
+              },
+              {
+                "$validators": {},
+                "$asyncValidators": {},
+                "$parsers": [],
+                "$formatters": [
+                  null
+                ],
+                "$viewChangeListeners": [],
+                "$untouched": true,
+                "$touched": false,
+                "$pristine": true,
+                "$dirty": false,
+                "$valid": false,
+                "$invalid": true,
+                "$error": {
+                  "required": true
+                },
+                "$name": "formly_1_customInput_picky_0",
+                "$options": null
+              }
+            ]
+          }
         }
       ]
     }
