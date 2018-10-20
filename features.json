@@ -12,16 +12,7 @@
       "form": [
         {
           "key": "libraryId",
-          "type": "customInput",
-          "validators": {
-            "libraryIdRequired": {
-              "expression": function(viewValue, modelValue) {
-                var value = modelValue || viewValue;
-                return value.length > 0;
-              },
-              "message": "Please enter your Library Id."
-            }
-          },
+          "type": "input",
           "templateOptions": {
             "required": true,
             "label": "BrowZine Library Id",
@@ -30,16 +21,7 @@
         },
         {
           "key": "apiKey",
-          "type": "customInput",
-          "validators": {
-            "apiKeyRequired": {
-              "expression": function(viewValue, modelValue) {
-                var value = modelValue || viewValue;
-                return value.length > 0;
-              },
-              "message": "Please enter your API Key."
-            }
-          },
+          "type": "input",
           "templateOptions": {
             "required": true,
             "label": "BrowZine API Key",
@@ -159,6 +141,97 @@
               }
             ]
           }
+        },
+
+        "$error": {
+          "required": [
+            {
+              "$validators": {},
+              "$asyncValidators": {},
+              "$parsers": [],
+              "$formatters": [
+                null
+              ],
+              "$viewChangeListeners": [],
+              "$untouched": true,
+              "$touched": false,
+              "$pristine": true,
+              "$dirty": false,
+              "$valid": false,
+              "$invalid": true,
+              "$error": {
+                "required": true
+              },
+              "$name": "vm.form_input_firstName_0",
+              "$options": null
+            },
+            {
+              "$validators": {},
+              "$asyncValidators": {},
+              "$parsers": [],
+              "$formatters": [
+                null
+              ],
+              "$viewChangeListeners": [],
+              "$untouched": true,
+              "$touched": false,
+              "$pristine": true,
+              "$dirty": false,
+              "$valid": false,
+              "$invalid": true,
+              "$error": {
+                "required": true
+              },
+              "$name": "vm.form_input_lastName_1",
+              "$options": null
+            }
+          ]
+        },
+        "$name": "vm.form",
+        "$dirty": false,
+        "$pristine": true,
+        "$valid": false,
+        "$invalid": true,
+        "$submitted": false,
+        "vm.form_input_firstName_0": {
+          "$validators": {},
+          "$asyncValidators": {},
+          "$parsers": [],
+          "$formatters": [
+            null
+          ],
+          "$viewChangeListeners": [],
+          "$untouched": true,
+          "$touched": false,
+          "$pristine": true,
+          "$dirty": false,
+          "$valid": false,
+          "$invalid": true,
+          "$error": {
+            "required": true
+          },
+          "$name": "vm.form_input_firstName_0",
+          "$options": null
+        },
+        "vm.form_input_lastName_1": {
+          "$validators": {},
+          "$asyncValidators": {},
+          "$parsers": [],
+          "$formatters": [
+            null
+          ],
+          "$viewChangeListeners": [],
+          "$untouched": true,
+          "$touched": false,
+          "$pristine": true,
+          "$dirty": false,
+          "$valid": false,
+          "$invalid": true,
+          "$error": {
+            "required": true
+          },
+          "$name": "vm.form_input_lastName_1",
+          "$options": null
         }
       ]
     }
