@@ -13,9 +13,17 @@
         {
           "key": "libraryId",
           "type": "customInput",
+          "validators": {
+            "libraryIdRequired": {
+              "expression": function(viewValue, modelValue) {
+                var value = modelValue || viewValue;
+                return value.length > 0;
+              },
+              "message": "Please enter your Library Id."
+            }
+          },
           "templateOptions": {
             "required": true,
-            "minlength": 1,
             "label": "BrowZine Library Id",
             "placeholder": "ENTER LIBRARY ID"
           }
@@ -23,9 +31,17 @@
         {
           "key": "apiKey",
           "type": "customInput",
+          "validators": {
+            "apiKeyRequired": {
+              "expression": function(viewValue, modelValue) {
+                var value = modelValue || viewValue;
+                return value.length > 0;
+              },
+              "message": "Please enter your API Key."
+            }
+          },
           "templateOptions": {
             "required": true,
-            "minlength": 1,
             "label": "BrowZine API Key",
             "placeholder": "ENTER API KEY"
           }
