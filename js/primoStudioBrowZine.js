@@ -7,9 +7,9 @@ function isBrowzineLoaded() {
   var validation = false;
   var scripts = document.head.querySelectorAll("script");
 
-  if(scripts) {
-    Array.prototype.forEach.call(scripts, function(script) {
-      if(script.src.indexOf("browzine-primo-adapter") > -1) {
+  if (scripts) {
+    Array.prototype.forEach.call(scripts, function (script) {
+      if (script.src.indexOf("browzine-primo-adapter") > -1) {
         validation = true;
       }
     });
@@ -19,7 +19,7 @@ function isBrowzineLoaded() {
 };
 
 function PrimoStudioBrowzineController($scope, studioConfig) {
-  this.$onInit = function() {
+  if (!isBrowzineLoaded()) {
     window.browzine = {
       libraryId: studioConfig[0].libraryId,
       apiKey: studioConfig[0].apiKey,
@@ -30,17 +30,21 @@ function PrimoStudioBrowzineController($scope, studioConfig) {
       articleBrowZineWebLinkText: studioConfig[0].articleBrowZineWebLinkText,
       articlePDFDownloadLinkEnabled: studioConfig[0].articlePDFDownloadLinkEnabled,
       articlePDFDownloadLinkText: studioConfig[0].articlePDFDownloadLinkText,
-      printRecordsIntegrationEnabled: studioConfig[0].printRecordsIntegrationEnabled,
+      printRecordsIntegrationEnabled: studioConfig[0].printRecordsIntegrationEnabled
     };
 
-    if(!this.isBrowzineLoaded()) {
-      window.browzine.script = document.createElement("script");
-      window.browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/staging/browzine-primo-adapter.js";
-      window.document.head.appendChild(window.browzine.script);
-    }
-  };
+    window.browzine.script = document.createElement("script");
+    window.browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/staging/browzine-primo-adapter.js";
+    window.document.head.appendChild(window.browzine.script);
+  }
 
-  window.browzine.primo.searchResult($scope);
+  (function poll() {
+    if(isBrowzineLoaded() && window.browzine.primo) {
+      window.browzine.primo.searchResult($scope);
+    } else {
+      requestAnimationFrame(poll);
+    }
+  })();
 };
 
 var PrimoStudioBrowzineComponent = {
