@@ -19,7 +19,7 @@ function isBrowzineLoaded() {
 };
 
 function PrimoStudioBrowzineController($scope, studioConfig) {
-  $onInit = function() {
+  this.$onInit = function() {
     window.browzine = {
       libraryId: studioConfig[0].libraryId,
       apiKey: studioConfig[0].apiKey,
