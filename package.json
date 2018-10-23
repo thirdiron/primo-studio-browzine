@@ -1,6 +1,6 @@
 {
   "name": "primo-studio-browzine",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Primo Studio BrowZine addon",
   "keywords": [
     "BrowZine",
@@ -9,6 +9,5 @@
     "Primo Studio",
     "Primo Studio BrowZine"
   ],
-  "homepage": "https://thirdiron.atlassian.net/wiki/spaces/BrowZineAPIDocs/pages/79200260/Ex+Libris+Primo+Integration",
   "devDependencies": {}
 }

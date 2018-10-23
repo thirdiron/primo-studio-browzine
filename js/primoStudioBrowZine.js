@@ -20,6 +20,18 @@ function isBrowzineLoaded() {
 
 function PrimoStudioBrowzineController($scope, studioConfig) {
   if (!isBrowzineLoaded()) {
+    if (studioConfig[0]) {
+      if (!studioConfig[0].libraryId) {
+        console.log("Missing required Primo Studio BrowZine addon field: libraryId");
+      }
+
+      if (!studioConfig[0].apiKey) {
+        console.log("Missing required Primo Studio BrowZine addon field: apiKey");
+      }
+    } else {
+      console.log("Missing Primo Studio BrowZine addon configuration: studioConfig");
+    }
+
     window.browzine = {
       libraryId: studioConfig[0].libraryId,
       apiKey: studioConfig[0].apiKey,
