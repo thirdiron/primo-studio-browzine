@@ -8,4 +8,4 @@ Add Third Iron powered enhancements to your search results: LibKey Instant PDF D
 
 BrowZine Library Id and BrowZine API Key are REQUIRED fields. Please contact Third Iron support to obtain your API Key.
 
-![Primo Studio BrowZine Addon](https://i.imgur.com/B34LEec.png "Primo Studio BrowZine Addon")
+![Primo Studio BrowZine Addon](https://i.imgur.com/nI32tIR.png "Primo Studio BrowZine Addon")
