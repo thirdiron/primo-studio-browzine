@@ -49,7 +49,6 @@ server.listen(8000, function () {
 Then run the following gulp task:
 
 ```
-
 gulp web
 ```
 
