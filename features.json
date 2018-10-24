@@ -15,7 +15,7 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine Library Id <a href='https://browzine.com/libraries/222/subjects'>(?)</a>",
+            "label": "BrowZine Library Id <a href='https://browzine.com/libraries/222/subjects'>(?)</a> Plain link? https://browzine.com/libraries/222/subjects",
             "placeholder": "ENTER LIBRARY ID"
           }
         },
@@ -24,7 +24,7 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine API Key <a href='https://browzine.com/libraries/222/subjects'>(?)</a>",
+            "label": "BrowZine API Key <a href='https://browzine.com/libraries/222/subjects'>(?)</a> Plain link? https://browzine.com/libraries/222/subjects",
             "placeholder": "ENTER API KEY"
           }
         },
