@@ -71,11 +71,11 @@ Bump the npm versions in features.json and package.json
 https://github.com/thirdiron/primo-studio-browzine/blob/master/features.json#L9
 https://github.com/thirdiron/primo-studio-browzine/blob/master/package.json#L3
 
-Commit those changes, then `npm publish`
+Commit those changes, then `npm publish`.
 
 ### Primo Studio Community Repo
 
 Fork the Primo Studio Community Repo (as of this writing)
 https://github.com/primousers/primostudio
 
-Then copy our feature.json snippet into the features.json found in the community repo. Finally, submit a PR to the `primousers/primostudio` repo. Once merged, our addon will be live in the production version of Primo Studio, including any updates pushed to npm.
+Then copy our feature.json snippet into the larger features.json found in the community repo with all of the other addons. Finally, submit a PR to the `primousers/primostudio` repo. Once merged, our addon will be live in the production version of Primo Studio with the specific npm version of our code listed in `featuers/version`.
