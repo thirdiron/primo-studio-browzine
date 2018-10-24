@@ -78,4 +78,4 @@ Commit those changes, then `npm publish`.
 Fork the Primo Studio Community Repo (as of this writing)
 https://github.com/primousers/primostudio
 
-Then copy our feature.json snippet into the larger features.json found in the community repo with all of the other addons. Finally, submit a PR to the `primousers/primostudio` repo. Once merged, our addon will be live in the production version of Primo Studio with the specific npm version of our code listed in `featuers/version`.
+Then copy our feature.json snippet into the larger features.json found in the community repo with all of the other addons. Finally, submit a PR to the `primousers/primostudio` repo. Once merged, our addon will be live in the production version of Primo Studio with the specific npm version of our code listed in `features/version`.
