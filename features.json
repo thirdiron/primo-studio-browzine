@@ -24,7 +24,7 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine API Key <a href='https://browzine.com/libraries/222/subjects'>(?)</a> Plain link? https://browzine.com/libraries/222/subjects",
+            "label": "BrowZine API Key https://browzine.com/libraries/222/subjects",
             "placeholder": "ENTER API KEY"
           }
         },
