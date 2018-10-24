@@ -1,30 +1,32 @@
 [
   {
     "face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
-    "notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition. Questions about this integration?  <a href='https://browzine.com/libraries/222/subjects'>Click here</a>. What about plain Urls? https://browzine.com/libraries/222/subjects",
+    "notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition.",
     "who": "Third Iron, LLC",
     "what": "BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
         {
           "key": "libraryId",
           "type": "input",
+          "defaultValue": "Questions? Email support@thirdiron.com",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine Library Id <a href='https://browzine.com/libraries/222/subjects'>(?)</a> Plain link? https://browzine.com/libraries/222/subjects",
+            "label": "BrowZine Library Id",
             "placeholder": "ENTER LIBRARY ID"
           }
         },
         {
           "key": "apiKey",
           "type": "input",
+          "defaultValue": "Questions? Email support@thirdiron.com",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine API Key https://browzine.com/libraries/222/subjects",
+            "label": "BrowZine API Key",
             "placeholder": "ENTER API KEY"
           }
         },
