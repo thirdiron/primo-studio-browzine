@@ -1,12 +1,12 @@
 [
   {
     "face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
-    "notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition.",
+    "notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition. Questions about this integration?  <a href='https://browzine.com/libraries/222/subjects'>Click here</a>",
     "who": "Third Iron, LLC",
     "what": "BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
@@ -15,7 +15,7 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine Library Id",
+            "label": "BrowZine Library Id <a href='https://browzine.com/libraries/222/subjects'>(?)</a>",
             "placeholder": "ENTER LIBRARY ID"
           }
         },
@@ -24,7 +24,7 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine API Key",
+            "label": "BrowZine API Key <a href='https://browzine.com/libraries/222/subjects'>(?)</a>",
             "placeholder": "ENTER API KEY"
           }
         },
