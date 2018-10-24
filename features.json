@@ -6,7 +6,7 @@
     "what": "BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
@@ -24,7 +24,7 @@
           "type": "input",
           "templateOptions": {
             "required": true,
-            "label": "BrowZine API Key (Questions? Email support@thirdiron.com)",
+            "label": "BrowZine API Key",
             "placeholder": "ENTER API KEY"
           }
         },
