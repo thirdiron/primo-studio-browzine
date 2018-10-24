@@ -6,28 +6,26 @@
     "what": "BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
         {
           "key": "libraryId",
           "type": "input",
-          "defaultValue": "Questions? Email support@thirdiron.com",
           "templateOptions": {
             "required": true,
             "label": "BrowZine Library Id",
-            "placeholder": "ENTER LIBRARY ID"
+            "placeholder": "Questions? Email support@thirdiron.com"
           }
         },
         {
           "key": "apiKey",
           "type": "input",
-          "defaultValue": "Questions? Email support@thirdiron.com",
           "templateOptions": {
             "required": true,
             "label": "BrowZine API Key",
-            "placeholder": "ENTER API KEY"
+            "placeholder": "Questions? Email support@thirdiron.com"
           }
         },
         {
