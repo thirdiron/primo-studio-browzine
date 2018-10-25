@@ -1,4 +1,4 @@
-# Primo Studio BrowZine Addon
+.json# Primo Studio BrowZine Addon
 
 ## Overview
 
@@ -12,7 +12,7 @@ BrowZine Library Id and BrowZine API Key are REQUIRED fields. Please contact Thi
 
 ## Development
 
-Write code to support browsers Chrome, Firefox, Safari, Edge and IE11.
+Could should support Chrome, Firefox, Safari, Edge and IE11 browsers.
 
 To run Primo Studio locally,
 
@@ -60,7 +60,7 @@ http://localhost:8000
 
 ## Deployment
 
-Two steps. First step, deploy our updates to npm. Then submit a PR with our Primo Studio addon features.config to the Primo Studio Community repo.
+Two steps. First step, deploy our updates to npm. Then submit a PR with our Primo Studio addon features.json to the Primo Studio Community repo.
 
 ### npm
 
