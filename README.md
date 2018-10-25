@@ -12,7 +12,7 @@ BrowZine Library Id and BrowZine API Key are REQUIRED fields. Please contact Thi
 
 ## Development
 
-Could should support Chrome, Firefox, Safari, Edge and IE11 browsers.
+Development should support Chrome, Firefox, Safari, Edge and IE11 browsers.
 
 To run Primo Studio locally,
 
