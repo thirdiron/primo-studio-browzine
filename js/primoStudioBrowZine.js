@@ -1,15 +1,15 @@
 PrimoStudioBrowzineController.$inject = [
-  '$scope',
-  'primoStudioBrowzineStudioConfig'
+  "$scope",
+  "primoStudioBrowzineStudioConfig"
 ];
 
 function isBrowzineLoaded() {
   var validation = false;
   var scripts = document.head.querySelectorAll("script");
 
-  if(scripts) {
-    Array.prototype.forEach.call(scripts, function(script) {
-      if(script.src.indexOf("browzine-primo-adapter") > -1) {
+  if (scripts) {
+    Array.prototype.forEach.call(scripts, function (script) {
+      if (script.src.indexOf("browzine-primo-adapter") > -1) {
         validation = true;
       }
     });
@@ -19,9 +19,21 @@ function isBrowzineLoaded() {
 };
 
 function PrimoStudioBrowzineController($scope, studioConfig) {
-  $onInit = function() {
+  if (!isBrowzineLoaded()) {
+    if (studioConfig[0]) {
+      if (!studioConfig[0].libraryId) {
+        console.log("Missing required Primo Studio BrowZine addon field: libraryId");
+      }
+
+      if (!studioConfig[0].apiKey) {
+        console.log("Missing required Primo Studio BrowZine addon field: apiKey");
+      }
+    } else {
+      console.log("Missing Primo Studio BrowZine addon configuration: studioConfig");
+    }
+
     window.browzine = {
-      api: studioConfig[0].api,
+      libraryId: studioConfig[0].libraryId,
       apiKey: studioConfig[0].apiKey,
       journalCoverImagesEnabled: studioConfig[0].journalCoverImagesEnabled,
       journalBrowZineWebLinkTextEnabled: studioConfig[0].journalBrowZineWebLinkTextEnabled,
@@ -30,27 +42,31 @@ function PrimoStudioBrowzineController($scope, studioConfig) {
       articleBrowZineWebLinkText: studioConfig[0].articleBrowZineWebLinkText,
       articlePDFDownloadLinkEnabled: studioConfig[0].articlePDFDownloadLinkEnabled,
       articlePDFDownloadLinkText: studioConfig[0].articlePDFDownloadLinkText,
-      printRecordsIntegrationEnabled: studioConfig[0].printRecordsIntegrationEnabled,
+      printRecordsIntegrationEnabled: studioConfig[0].printRecordsIntegrationEnabled
     };
 
-    if(!this.isBrowzineLoaded()) {
-      window.browzine.script = document.createElement("script");
-      window.browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/staging/browzine-primo-adapter.js";
-      window.document.head.appendChild(window.browzine.script);
-    }
-  };
+    window.browzine.script = document.createElement("script");
+    window.browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js";
+    window.document.head.appendChild(window.browzine.script);
+  }
 
-  window.browzine.primo.searchResult($scope);
+  (function poll() {
+    if(isBrowzineLoaded() && window.browzine.primo) {
+      window.browzine.primo.searchResult($scope);
+    } else {
+      requestAnimationFrame(poll);
+    }
+  })();
 };
 
 var PrimoStudioBrowzineComponent = {
-  selector: 'primoStudioBrowzine',
+  selector: "primoStudioBrowzine",
   controller: PrimoStudioBrowzineController,
-  bindings: {parentCtrl: '<'}
+  bindings: {parentCtrl: "<"}
 };
 
 var PrimoStudioBrowzineModule = angular
-    .module('primoStudioBrowzine', [])
-    .component(PrimoStudioBrowzineComponent.selector, PrimoStudioBrowzineComponent);
+    .module("primoStudioBrowzine", [])
+    .component(PrimoStudioBrowzineComponent.selector, PrimoStudioBrowzineComponent).name;
 
 app.requires.push(PrimoStudioBrowzineModule);

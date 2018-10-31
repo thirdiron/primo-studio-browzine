@@ -6,27 +6,32 @@
     "what": "BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
         {
-          "key": "api",
+          "key": "libraryId",
           "type": "input",
           "templateOptions": {
-            "label": "BrowZine API Endpoint"
+            "required": true,
+            "label": "BrowZine Library Id (Questions? Email support@thirdiron.com)",
+            "placeholder": "ENTER LIBRARY ID"
           }
         },
         {
           "key": "apiKey",
           "type": "input",
           "templateOptions": {
-            "label": "BrowZine API Key"
+            "required": true,
+            "label": "BrowZine API Key",
+            "placeholder": "ENTER API KEY"
           }
         },
         {
           "key": "journalCoverImagesEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable Journal Cover Images",
             "options": [
@@ -44,6 +49,7 @@
         {
           "key": "journalBrowZineWebLinkTextEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable BrowZine Web Journal Issue Links",
             "options": [
@@ -61,6 +67,7 @@
         {
           "key": "journalBrowZineWebLinkText",
           "type": "input",
+          "defaultValue": "View Journal Contents",
           "templateOptions": {
             "label": "BrowZine Web Journal Issue Link Text"
           }
@@ -68,6 +75,7 @@
         {
           "key": "articleBrowZineWebLinkTextEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable BrowZine Web Article In Context Links",
             "options": [
@@ -85,6 +93,7 @@
         {
           "key": "articleBrowZineWebLinkText",
           "type": "input",
+          "defaultValue": "View Issue Contents",
           "templateOptions": {
             "label": "BrowZine Web Article In Context Link Text"
           }
@@ -92,6 +101,7 @@
         {
           "key": "articlePDFDownloadLinkEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable BrowZine Web PDF Download Links",
             "options": [
@@ -109,6 +119,7 @@
         {
           "key": "articlePDFDownloadLinkText",
           "type": "input",
+          "defaultValue": "Download PDF",
           "templateOptions": {
             "label": "BrowZine Web PDF Download Link Text"
           }
@@ -116,6 +127,7 @@
         {
           "key": "printRecordsIntegrationEnabled",
           "type": "select",
+          "defaultValue": true,
           "templateOptions": {
             "label": "Enable Print Records Integration",
             "options": [
