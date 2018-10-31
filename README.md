@@ -1,4 +1,4 @@
-.json# Primo Studio BrowZine Addon
+# Primo Studio BrowZine Addon
 
 ## Overview
 
