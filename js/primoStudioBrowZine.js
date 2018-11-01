@@ -46,7 +46,7 @@ function PrimoStudioBrowzineController($scope, studioConfig) {
     };
 
     window.browzine.script = document.createElement("script");
-    window.browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/staging/browzine-primo-adapter.js";
+    window.browzine.script.src = "https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js";
     window.document.head.appendChild(window.browzine.script);
   }
 
