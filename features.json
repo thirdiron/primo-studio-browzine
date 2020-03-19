@@ -167,6 +167,119 @@
               }
             ]
           }
+        },
+        {
+          "key": "unpaywallEmailAddressKey",
+          "type": "input",
+          "templateOptions": {
+            "required": false,
+            "label": "Unpaywall Email Address Key",
+            "placeholder": "ENTER UNPAYWALL EMAIL ADDRESS KEY"
+          }
+        },
+        {
+          "key": "articlePDFDownloadViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article PDF Download via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articlePDFDownloadViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Download PDF (via Unpaywall)",
+          "templateOptions": {
+            "label": "Article PDF Download via Unpaywall Text"
+          }
+        },
+        {
+          "key": "articleLinkViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article Link via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleLinkViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Read Article (via Unpaywall)",
+          "templateOptions": {
+            "label": "Article Link via Unpaywall Text"
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptPDFViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article Accepted Manuscript PDF via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptPDFViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Download PDF (Accepted Manuscript via Unpaywall)",
+          "templateOptions": {
+            "label": "Article Accepted Manuscript PDF Text"
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptArticleLinkViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article Accepted Manuscript Article Link via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptArticleLinkViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Read Article (Accepted Manuscript via Unpaywall)",
+          "templateOptions": {
+            "label": "Article Accepted Manuscript Article Link Text"
+          }
         }
       ]
     }
